@@ -71,7 +71,7 @@ module Freee
           faraday.adapter Faraday.default_adapter
         end
         client.headers["FREEE-VERSION"] = "2022-02-01"
-        client.authorization :Bearer, access_token
+        client.headers['Authorization'] = "Bearer #{access_token}"
         client
       end
     end
