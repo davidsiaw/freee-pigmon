@@ -2,7 +2,6 @@
 
 require 'oauth2'
 require 'faraday'
-require 'faraday_middleware'
 require 'fileutils'
 require 'yaml'
 require 'psych'
